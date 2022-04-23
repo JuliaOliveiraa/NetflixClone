@@ -1,0 +1,330 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ELEMENTOS BASE*/
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 5%;
+    
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+header nav a .avatar{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    
+
+}
+
+/*FILME PRINCIPAL*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('/img/capaSupernatural4.jpg');
+
+
+    height: 600px;
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-bottom: 5px;
+
+}
+
+.tituloSerie {
+    margin-top: 5%;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+.descricao {
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.botao {
+    background-color: rgb(0, 0, 0,.50);
+    color: #fff;
+    margin-right: 5px;
+    padding: 10px 35px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer; 
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+/*carrosel*/
+
+.container{
+    margin-left: 20px;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.titulo-carrosel{
+    font-size: 35px;
+    margin-left: 20px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    
+
+}
+
+.item{
+    cursor: pointer; 
+}
+
+/*rodapé*/
+
+footer{
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contacts_list {
+    list-style-type: none;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+.contacts_list li a{
+    text-decoration: none;
+    color: #fff;
+} 
+.contacts_list i{
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+/*modal Assitir Agora*/
+
+.modal-container{
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3000;
+    justify-content: center;
+    
+    
+}
+
+
+.modal{
+    background: var(--preta);
+    width: 960px;
+    height: 730px;
+    margin-top: 5%;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.fechar {
+    background-color: var(--preta);
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--vermelho);
+
+    cursor: pointer;
+}
+
+
+/*MODAL INFORMAÇÃO*/
+
+.modalInfo{
+    background: var(--preta);
+    width: 960px;
+    height: 730px;
+    margin-top: 5%;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fecharInfo{
+    background-color: var(--preta);
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--vermelho);
+
+    cursor: pointer;
+}
+
+.modal-info h2{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    
+
+}
+
+.itemSP{
+    margin-bottom: 5px;
+}
+
+.infoIMG{
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-top: -50px;
+    position: absolute;
+}
+
+
+
+.body-Info{
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    background-color: #302f2e;
+    margin-top: 40px;
+
+    
+}
+
+.textPrincipal{
+    position: relative;
+    margin-left: 45%;
+    margin-right:5%;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.textPrincipal li{
+    margin-bottom: 20px;
+    text-align: justify;
+    list-style: none;
+}
+
+/*modal Login*/
+
+.modal-containerLogin{
+    display: none;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3000;
+    justify-content: center;
+    
+    
+}
+
+.modalLogin{
+    background: var(--preta);
+    width: 960px;
+    height: 730px;
+    margin-top: 5%;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fecharLogin{
+    background-color: var(--preta);
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--vermelho);
+
+    cursor: pointer;
+}
+
+

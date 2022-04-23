@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/olw/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/olw/owl.theme.default.min.css">
+
+
+
+    <title>NETFLIX CLONE</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+                <a href="#" class="login"><img class="avatar" src="img/avatar.png">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="tituloSerie">SUPERNATURAL</h3>
+                <p class="descricao">Desde que era pequeno, Sam Winchester (Jared Padalecki) tentava escapar do próprio
+                    passsado. Após a misteriosa morte de Mary (Samantha Smith), o pai de Sam passou a procurar vingança
+                    contra as forças do mal que mataram a esposa, destruindo qualquer ser maligno que cruze o seu
+                    caminho. Ao contrário de Sam, Dean (Jensen Ackles), seu irmão mais velho, sempre quis seguir os
+                    passos do pai. Sam parece determinado a se livrar do "negócio da família", mas sua vida está prestes
+                    a tomar um rumo indesejado quando não lhe resta outra escolha a não ser se unir ao irmão.</p>
+                <div class="botoes">
+                    <button role="button" class="botao" id="botaoAssistir">
+                        <i class="fa-solid fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" id="botaoInfo">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrosel-filmes">
+            <div class="titulo-carrosel">
+                <p>POPULARES</p>
+            </div>
+            <div class="owl-carousel owl theme">
+
+                <div class="item">
+                    <img class="box-filme" src="img/mini1.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini2.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini3.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini4.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini5.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini6.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini7.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini8.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini9.jpg">
+                </div>
+            </div>
+
+            <div class="titulo-carrosel">
+                <p>REALITY</p>
+            </div>
+            <div class="owl-carousel owl theme">
+                <div class="item">
+                    <img class="box-filme" src="img/reality1.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/reality2.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/reality3.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/reality4.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/reality5.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/reality6.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/reality7.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/reality8.jpg">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="container-fluid text-center bg.footer margin">
+        <p>Desenvolvido por Júlia Oliveira em Aula do Bootcamp Carrefour DIO.</p>
+        <ul class="contacts_list">
+            <li> <a href="https://www.linkedin.com/in/julia-oliveira-47a1541a1/" target="_blank"> <i
+                        class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+            <li> <a href="mailto: oliveiradesilvajulia@gmail.com"><i
+                        class="fa-solid fa-at"></i>oliveiradesilvajulia@gmail.com</a> </li>
+            <li> <a href="https://github.com/JuliaOliveiraa" target="_blank"><i
+                        class="fa-brands fa-github"></i>GitHub</a> </li>
+        </ul>
+    </footer>
+
+
+    <div id="modal-assistir" class="modal-container">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yTDDG1_1h1Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+    <div id="modal-informacao" class="modal-container">
+        <div class="modalInfo">
+            <button class="fecharInfo">X</button>
+            <div class="modal-info">
+                <h2>Supernatural</h2>
+                <div class="body-Info">
+                    <div class="infoIMG">
+                        <div class="itemSP">
+                            <img class="spInfo1" src="img/capaSupernatural2.jpg" width="35%">
+                        </div>
+                        <div class="itemSP">
+                            <img class="spInfo2" src="img/supernatural5.jpg" width="35%">
+                        </div>
+                        <div class="itemSP">
+                            <img class="spInfo3" src="img/supernatural6.jpg" width="35%">
+                        </div>
+                    </div>
+                    <ul class="textPrincipal">
+                        <li>Os irmãos Sam e Dean Winchester encaram cenários sinistros caçando monstros. Velhos truques,
+                            armas e esconderijos não funcionam mais e seus amigos os traem, forçando os irmãos a contar
+                            um com o outro enquanto enfrentam novos inimigos.</li>
+                        <li>Primeiro episódio: 13 de setembro de 2005</li>
+                        <li>Episódio final: 19 de novembro de 2020</li>
+                        <li>Tema musical: Carry On Wayward Son</li>
+                        <li>Emissoras originais: The CW Television Network, The WB</li>
+                        <li>Spin-offs: Supernatural: Bloodlines, Supernatural: The Animation</li>
+                        <li>Autores: Eric Kripke, Robert Singer, Sera Gamble.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/08712ba671.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>
